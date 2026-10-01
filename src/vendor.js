@@ -1,0 +1,10 @@
+import jsQR from 'jsqr';
+import qrcode from 'qrcode-generator';
+import * as XLSX from 'xlsx';
+import { Capacitor } from '@capacitor/core';
+import { Filesystem, Directory } from '@capacitor/filesystem';
+import { Share } from '@capacitor/share';
+window.jsQR = jsQR;
+window.qrcode = qrcode;
+window.XLSX = XLSX;
+window.NativeApp = { Capacitor, Filesystem, Directory, Share };
